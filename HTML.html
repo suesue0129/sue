@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>한시우's Design Portfolio</title>
+    <style>
+
+      * {margin:0; box-sizing:border-box;}
+      body {color:#fff; font-family:"맑은 고딕"; margin: 0 0 100px 0px;}
+      ul, ol,  li {list-style:none; margin:0; padding:0;}
+
+      #grad1 {
+        weight: 100vw;
+        background-image: linear-gradient(to right, #263bd3 , #346296);
+        display:flex; justify-content: center; align-items:flex-start; flex-wrap:wrap;
+      }
+
+
+
+      /*프로필 박스*/
+      #profile_box {width:1050px; height:80vh; margin:100px 0 0 0px; }
+
+      .about {width:250px; height:640px;  margin:0 6% 0 0px; float:left;}
+      .about > img {width:155px; height:200px; margin:20px 0px;} 
+      .about >h1 {margin:30px 0 30px 0px; font-size:40px;}
+      table, th, td { border:none; font-size:14px; margin:10px 0 0 0px;}
+
+      .graph2 {width:700px; height:250px;  float:right;   background-image: url("img/line_gr.png"); background-repeat: no-repeat; background-position:left bottom; margin:50px 0 0 0px;}
+      .graph2 >h3 {margin:80px 0 0px 50px; font-size:18px;}
+
+      .education {width:300px; height:125px; margin:50px 0 0 30px;  float:left;}
+      .training {width:350px; height:125px; margin:50px 0 0 50px;   float:left; }
+      .licence {width:300px; height:125px;  margin:50px 0 0 30px;   float:left;} 
+      .skill {width:350px; height:125px;   margin:50px 0 0 50px;  float:left;}
+
+
+
+
+
+
+
+      /*가로박스 이미지*/
+      .img_box1 {width:1100px; height:100vh;  margin:100px 0 0px 0px;}
+
+      .ibox1 {width:900px; height:70vh; }
+      .ibox1 > img {width:100%; height:100%; cursor:pointer;}
+      .ibox1 > img:hover {opacity:0.5;}
+
+      .tbox1 {width:1000px; height:180px; float:right;  margin:50px 0 0 0px;}
+      .tbox1 .titlebox {width:400px; height:180px;  float:left; }
+      .tbox1  h1 {font-size:40px;  }   
+      .tbox1  h3 {font-size:30px;   margin:20px 0 10px 0px; line-height:25px; }   
+      .tbox1  .pointc {font-size:20px; margin :10px 20px 0 0px;  float:left;}   
+      .tbox1  span {font-size:20px;   }
+      .tbox1  p {font-size:13px; line-height:25px;  float:right; width:580px; display:inline-block; margin:30px 0 0 0px;}  
+
+
+
+      /*세로박스 이미지*/
+      .img_box2 {width:1100px; height:80vh;  margin:150px 0 0px 0px; }
+      .ibox2 {width:650px; height:80vh; float:left}
+      .ibox2 > img {width:100%; height:100%; cursor:pointer;}
+      .ibox2 > img:hover {opacity:0.5;}
+
+      .tbox2 {width:370px; height:445px; float:right; margin:100px 0 0 0px; }
+      .tbox2 > h1 {font-size:40px;  margin:30px 0 30px 0px;}   
+      .tbox2 > h3 {font-size:30px; margin:30px 0 30px 0px;}   
+      .tbox2  .pointc {font-size:20px; margin:30px 0 30px 0px;}   
+      .tbox2  span {font-size:20px; margin:30px 0 30px 0px; }
+      .tbox2 > p {font-size:13px; line-height:25px; margin:50px 0 0 0px;}  
+
+
+
+
+
+      /*포인트칼*/
+
+      /*project 1*/
+      .color_01 > li  {width:25px; height:25px; border-radius:50%; float:left; margin: 10px 5px;}
+      .color_01 > li:first-child {background-color:#f2af88;}
+      .color_01 > li:nth-child(2) {background-color: #dadbdd;}
+      .color_01 > li:last-child {background-color: #222576;}
+
+
+
+      /*project 2*/
+      .color_02 > li  {width:25px; height:25px; border-radius:50%; float:left; margin: 10px 5px;}
+      .color_02 > li:first-child {background-color: #f2c36b;}
+      .color_02 > li:nth-child(2) {background-color: #f25d50;}
+      .color_02 > li:last-child {background-color: #6bbfa7;}
+
+
+
+      /*project 3*/
+      .color_03 > li  {width:25px; height:25px; border-radius:50%; float:left; margin: 10px 5px;}
+      .color_03 > li:first-child {background-color: #ffffff;}
+      .color_03 > li:nth-child(2) {background-color: #f20505;}
+      .color_03 > li:last-child {background-color: #0d0d0d;}
+
+
+
+
+      /*skill*/
+      .graph  { width: 90%; list-style: none; }
+      .graph li { position: relative; padding: 1px 0; white-space:nowrap; margin:5px 0;}
+      .graph li span  { display: inline-block; position: relative; height: 20px; line-height: 18px; background: linear-gradient( to left, #8c96ff, #6771da);  padding:0 10px; color: #ddd; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
+
+    </style>
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+
+    <script>
+
+
+
+      $(function(){
+
+        //1번째 이미지
+        $('.btn1').click(function(){
+          window.open("img/1.jpg","blank","width=1024, height=768")
+        });
+
+
+
+        //2번째 이미지
+        $('.btn2').click(function(){
+          window.open("img/6.jpg","blank","width=768, height=1024")
+        });
+
+
+
+
+        //3번째 이미지
+        $('.btn3').click(function(){
+          window.open("img/8.jpg","blank","width=768, height=1024")
+        });
+
+
+
+      });
+
+    </script>
+
+  </head>
+
+
+  <body  id="grad1">
+
+    <!-- 프로필박스-->
+
+    <div id="profile_box">
+      <div class="about">
+        <h1>About Me</h1>
+        <img src="img/photo.jpg" alt="사진">	
+        <h3>한시우 Han Si-woo</h3>
+
+
+        <table style="width:100%">
+          <tr>
+            <td>Birth</td>
+            <td>1991.01.29</td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>Suwon-si, Godeung-ro, 15 </td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>010 7100 6005</td>
+          </tr>
+          <tr>
+            <td>E-mail</td>
+            <td>bikedrive@naver.com</td>
+          </tr>
+        </table>
+
+
+      </div>
+
+      <div class="graph2">
+        <h3> 성장하는 디자이너</h3>
+
+      </div>
+
+      <div class="education">
+        <h3>EDUCATION</h3>
+
+        <table style="width:100%">
+          <tr>
+            <td>2009.02</td>
+            <td>한강미디어고등학교 졸업</td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div class="training">
+        <h3>TRAINING</h3>
+
+        <table style="width:100%">
+          <tr>
+            <td>이젠 컴퓨터 아카데미 수원</td>
+          </tr>
+          <tr>
+            <td>컴퓨터 그래픽스 양성과정 수료(2021년 11월)</td>
+          </tr>
+          <tr>
+            <td>(포토샵, 일러스트, 인디자인)</td>
+          </tr>
+          <tr>
+            <td>영상 편집 디자인 전문가 양성과정 수료(2022년 04월)</td>
+          </tr>
+          <tr>
+            <td>(프리미어 프로, 애프터 이펙트)</td>
+          </tr>
+        </table>
+
+
+      </div>
+
+
+
+      <div class="licence">
+        <h3>LICENCE</h3>
+
+        <table style="width:100%">
+          <tr>
+            <td>2021.12</td>
+            <td>컴퓨터 그래픽스 운용 기능사</td>
+          </tr>
+          <tr>
+            <td>2021.12</td>
+            <td>GTQid 인디자인 1급</td>
+          </tr>
+          <tr>
+            <td>2021.11</td>
+            <td>GTQi 일러스트 1급</td>
+          </tr>
+          <tr>
+            <td>2021.11</td>
+            <td>GTQ 포토샵 1급</td>
+          </tr>
+        </table>
+
+
+
+      </div>
+
+
+      <div class="skill">
+
+        <h3>SKILL</h3>
+        <ul  class="graph">
+          <li> <span style="width: 90%">Photoshop</span></li>
+          <li> <span style="width: 80%">Illustrator</span></li>
+          <li> <span style="width: 70%">InDesign</span></li>
+          <li> <span style="width: 60%">Premiere Pro</span></li>
+          <li> <span style="width: 50%">After Effects</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- project1 box -->
+    <div class="img_box1">
+      <div class="ibox1">
+        <img src="img/1.jpg" alt="이미지" class="btn1">
+      </div>
+
+      <div class="tbox1">
+        <div class="titlebox">
+          <h1>PROJECT 01</h1>
+          <h3>ROMA ITALY EDITORIAL <br><span>A V E N I R</span></h3>
+
+        <span class="pointc">Point Color</span>
+        <ul class="color_01">
+          <li></li>
+          <li></li>
+          <li></li>    
+        </div>
+        <p>
+          그래픽 잡지 편집 디자인입니다 <br>
+          이탈리아 로마 컨셉을 잡았으며 메인은 삼원색으로 글자는 세로 배치로 포인트로 줘서 디자인을 하였고,
+          편집 글을 평범하게 편집하지 않고 가로글과 세로글을 적절하게 배치하여 디자인하였습니다.
+          정적인 느낌을 탈피하고, 표지 느낌으로 지루해 보이지 않게 색상을 적절히 배치하여 시인성은 높였습니다.
+        </p>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- project2 box -->
+    <div class="img_box2">
+      <div class="ibox2">
+        <img src="img/2.jpg" alt="이미지" class="btn2">
+      </div>
+
+      <div class="tbox2">
+        <h1>PROJECT 02</h1>
+        <h3>EDITORIAL DESIGN<br><span>BOXING</span></h3>
+
+        <span class="pointc">Point Color</span>
+        <ul class="color_02">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <p>
+         인터뷰 느낌의 편집 디자인 입니다 <br>
+         특정 대상에 대하여 질문과 답 관련식으로 제작 해보았습니다.
+         일러스트와 포토샵을 적절히 사용하여 배치하였고, 눈에 잘 띄는 색상으로 조합하였습니다.
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- project3 box -->
+    <div class="img_box2">
+      <div class="ibox2">
+        <img src="img/3.jpg" alt="이미지" class="btn3">
+      </div>
+
+      <div class="tbox2">
+        <h1>PROJECT 03</h1>
+        <h3>ENGINE HISTORY <br><span>SINCE</span></h3>
+
+        <span class="pointc">Point Color</span>
+        <ul class="color_03">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <p>
+          자동차 엔진 관련하여 연혁별 역사에 관련하여 편집 디자인 해보았고,
+          흑백사진과 레드라인의 간결한 디자인으로 시인성을 높였으며 
+          최대한 깔끔하기 보이기 위해 흰색 배경과 블랙&레드 색상을 활용하였습니다.
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+
+  </body>
+</html>
+
+
